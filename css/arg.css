@@ -1,0 +1,333 @@
+body {
+  background: url("../img/background.png") center center / cover no-repeat fixed;
+  font-family: "halcom", sans-serif;
+  font-weight: 200;
+  color: wheat;
+}
+.main-text a {
+  color: wheat;
+}
+
+#topnavbar {
+    list-style-type: none;  /* Remove bullets */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    font-size: 24px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+#topnavbar a {
+    text-decoration: none;
+    color: wheat;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition here */
+}
+
+#topnavbar li {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition here */
+}
+
+#topnavbar li:hover {
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+
+.importantmessage {
+    color: white;
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.1);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    border: 10px solid;
+    border-radius: 10px;
+    border-color: rgba(255, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Add transition here */
+}
+
+.importantmessage:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    text-decoration: underline;
+}
+
+.importantmessage ::after {
+    background-color: rgba(255, 0, 0, 0.1);
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.gallery {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
+  width: 75%;
+  padding: 20px;
+  background-color: rgba(245, 222, 179, 0.1);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+}
+.gallery2-top {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(245, 222, 179, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+  }
+  .gallery2-middle {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(245, 222, 179, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+  }
+  .gallery2-bottom {
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgba(245, 222, 179, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+  }
+  .gallery2-text-top {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 100px;
+    padding: 5px;
+    background-color: rgba(245, 222, 179, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+  }
+
+  .gallery2-text-middle {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 125px;
+    padding: 5px;
+    background-color: rgba(245, 222, 179, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+  }
+  
+  
+.gallery3 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(245, 222, 179, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+  }
+  .gallery4 {
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 40%;
+    gap: 10px;
+    padding: 20px;
+    background-color: rgba(245, 222, 179, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+  }
+
+
+h6{
+    text-align: center;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+}
+
+.main-text {
+  margin: 20px auto;
+  padding: 20px;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.main-text h1 {
+  margin-left: 20px;
+}
+
+.text-png {
+  width: 100%;
+  border-radius: 10px;
+}
+.mobile-only {
+  display: none;
+}
+
+.titlecommunity {
+    text-align: center;
+}
+
+/* Media query for tablets and below */
+
+@media (max-width: 1280px) {
+  #topnavbar {
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10%;
+  }
+
+  .importantmessage {
+    padding: 5px;
+    font-size: 14pt;
+  }
+
+  .gallery {
+    flex-direction: column;
+    display: grid;
+  }
+  .gallery2 {
+    flex-direction: column;
+    display: grid;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  .main-text {
+    width: 90%;
+    margin: 20px 5%;
+    padding: 15px;
+    font-size: 16pt;
+  }
+  .main-text a {
+    color: wheat;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #topnavbar {
+    display: block;
+    gap: 10px;
+    transform: scale(0.9);
+  }
+
+  .importantmessage {
+    margin: 30px 5%;
+    padding: 5px;
+    font-size: 14pt;
+  }
+
+  .gallery {
+    flex-direction: column;
+    display: grid;
+  }
+  .gallery2 {
+    flex-direction: column;
+    display: grid;
+  }
+
+  .gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  .main-text {
+    width: 90%;
+    margin: 20px 5%;
+    padding: 15px;
+    transform: translate(-30px) scale(0.9);
+  }
+  .main-text a {
+    color: wheat;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  #topnavbar {
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .importantmessage {
+    margin: 20px 5%;
+    padding: 15px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    display: grid;
+  }
+  .gallery2 {
+    flex-direction: column;
+    display: grid;
+  }
+
+  .main-text {
+    width: 100%;
+    margin: 10px 5%;
+    padding: 10px;
+  }
+  .main-text a {
+    color: wheat;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}

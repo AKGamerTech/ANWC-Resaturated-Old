@@ -1,0 +1,229 @@
+body {
+  background: url('../img/background.png') center center / cover no-repeat fixed;
+  font-family: 'halcom', sans-serif;
+  font-weight: 200;
+  color: wheat;
+}
+
+#topnavbar {
+  list-style-type: none;  /* Remove bullets */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  font-size: 24px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+#topnavbar a {
+  text-decoration: none;
+  color: wheat;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition here */
+
+}
+
+#topnavbar li {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition here */
+}
+
+#topnavbar a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+#topnavbar li:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.importantmessage {
+  color: white;
+  display: block;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.1);
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 30px;
+  border: 10px solid;
+  border-radius: 10px;
+  border-color: rgba(255, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out; /* Add transition here */
+}
+
+.importantmessage:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.importantmessage ::after {
+  background-color: rgba(255, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.importantmessage p{
+  text-decoration: none;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.importantmessage p:hover {
+  background-color: rgba(245, 222, 179, 0.15);
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+
+}
+
+.main-text {
+  margin: 20px auto;
+  padding: 40px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.main-text a{
+  text-decoration: none;
+  color: wheat;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.main-text li {
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition here */
+}
+
+.main-text a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.main-text li:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 222, 179, 0.1);
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+
+.mobile-only {
+  display: none;
+}
+.mobile-hidden {
+  display: flex;
+} 
+
+/* Media query for tablets and below */
+
+@media (max-width: 1280px) {
+  #topnavbar {
+    flex-direction: row;
+    transform: scale(1);
+    font-size: 16pt;
+}
+
+  .importantmessage {
+      padding: 5px;
+      font-size: 14pt;
+  }
+
+  .gallery, .gallery2, .gallery-top, .gallery-middle, .gallery-middle2, .gallery-bottom {
+    max-width: 100%;
+    display: grid;
+}
+
+.gallery-bottom, .gallery-text-middle{
+    display:grid;
+}
+
+  .gallery-item  {
+
+      overflow: hidden;
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+  }
+  .main-text {
+      width: 90%;
+      margin: 20px 5%;
+      padding: 15px;
+      font-size: 16pt;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .mobile-hidden {
+    display: none;
+  } 
+}
+
+@media (max-width: 768px) {
+  #topnavbar {
+    font-size: 16pt;
+    gap: 16px;
+    justify-content: center;
+}
+
+.importantmessage {
+  margin: 30px 5%;
+  padding: 5px;
+  font-size: 14pt;
+}
+.gallery, .gallery2, .gallery-top, .gallery-middle, .gallery-middle2, .gallery-bottom {
+  max-width: 100%;
+  display: grid;
+}
+
+.gallery-bottom, .gallery-text-middle{
+  display:grid;
+}
+
+  .mobile-only {
+    display: block;
+  }
+  .mobile-hidden {
+    display: none;
+  } 
+  iframe {
+    scale: 0.6;
+    translate: -22%;
+  }
+}
+@media (max-width: 480px) {
+  #topnavbar {
+    font-size: 20px;
+    gap: 15px;
+}
+
+.importantmessage {
+    margin: 20px 5%;
+    padding: 15px;
+}
+
+.gallery {
+    width: 100%;
+    gap: 5px;
+}
+  iframe {
+    scale: 0.6;
+    translate: -22%;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .mobile-hidden {
+    display: none;
+  } 
+}

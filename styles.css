@@ -1,0 +1,237 @@
+body {
+    background: url('img/background.png') center center / cover no-repeat fixed;
+    font-family: 'halcom', sans-serif;
+    font-weight: 200;
+    color: wheat;
+}
+
+blockquote, p {
+    font-size: 1rem; /* Using relative units */
+}
+
+.header-container {
+    overflow: hidden;
+}
+
+.top-image {
+    overflow: hidden;
+    width: 100%;
+    display: block; /* Better choice for images */
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-image:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+#topnavbar {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    font-size: 1.5rem; /* Using relative units */
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+#topnavbar a {
+    text-decoration: none;
+    color: wheat;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#topnavbar li {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#topnavbar a:hover, #topnavbar li:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.importantmessage {
+    color: white;
+    display: block;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.1);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 30px;
+    border: 10px solid;
+    border-radius: 10px;
+    border-color: rgba(255, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.importantmessage:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.importantmessage a {
+    text-decoration: none;
+    color: rgb(245, 222, 179);
+}
+
+.importantmessage a:hover {
+    background-color: rgba(245, 222, 179, 0.15);
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+.gallery-middle, .gallery-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 222, 179, 0.1);
+    padding: 5px;
+    gap: 40px;
+    margin: 0;
+}
+
+.gallery-middle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 222, 179, 0.1);
+    padding: 5px;
+    margin: 0;
+}
+
+.gallery-bottom {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 40px;
+}
+
+.gallery-top {
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 222, 179, 0.1);
+    padding: 5px;
+    gap: 10px;
+    margin: 0;
+}
+
+.gallery-item {
+    height: auto;
+    max-width: 640px; /* Fixed typo */
+    border-radius: 10px;
+    background-color: rgba(245, 222, 179, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-text-top, .gallery-text-middle {
+    padding: 5px;
+    gap: 50px;
+    background-color: rgba(245, 222, 179, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.main-text {
+    margin: 20px auto;
+    padding: 40px;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.main-text h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.text-png {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-png:hover {
+    transform: scale(1.02);
+}
+
+.mobile-only {
+    display: none;
+}
+
+.mobile-hidden {
+    display: block;
+}
+
+.ARG {
+    color: black;
+}
+
+.ARG a {
+    text-decoration: none;
+}
+
+@media (max-width: 1280px) {
+    #topnavbar {
+        flex-direction: row;
+        transform: scale(1);
+        font-size: 1rem;
+        gap: 20px;
+
+    }
+
+    .importantmessage {
+        padding: 5px;
+        font-size: 1rem;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    .gallery, .gallery2, .gallery-top, .gallery-middle, .gallery-middle2, .gallery-bottom {
+        max-width: 100%;
+        display: grid;
+    }
+
+    .gallery-bottom, .gallery-text-middle {
+        display: grid;
+    }
+
+    .gallery-item {
+        overflow: hidden;
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .main-text {
+        width: 90%;
+        margin: auto ;
+        padding: 15px;
+        font-size: 1rem;
+    }
+    blockquote {
+        margin: 10px 5px;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #topnavbar {
+        font-size: 1rem;
+    }
+}
