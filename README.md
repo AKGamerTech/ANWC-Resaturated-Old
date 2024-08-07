@@ -1,4 +1,7 @@
-# [ANWC Website Test](https://akgamertech.github.io/ANWC-Website-Test/index.html)
+# OUTDATED;
+##Replaced by [ANWC-Website](https://akgamertech.github.io/ANWC-Website/index.html) Recoded/Rewritten
+
+[ANWC Website Test](https://akgamertech.github.io/ANWC-Website-Old/index.html)
 Hello, this website was made by me.
 --------------------------------------------------------------------------------------------------
 
@@ -12,7 +15,7 @@ Original concept of FNAF is made by Scott Cawthon and ANWC is a inspiration of i
 
 Font license provided by [Adobe Fonts](https://fonts.adobe.com/fonts/halcom)
 
-[Anyways, here's the website.](https://akgamertech.github.io/ANWC-Website-Test/index.html)
+[Anyways, here's the website.](https://akgamertech.github.io/ANWC-Website-Old/index.html)
 
 STORY:
 ======
@@ -23,7 +26,7 @@ STORY:
 
 > Now, working at The Colorfun Diner, you must complete missions, survive the nightshift and fight traumas, all in the timespan of one night.
 
-![](https://akgamertech.github.io/ANWC-Website-Test/img/reboot.webp)
+![](https://akgamertech.github.io/ANWC-Website-Old/img/reboot.webp)
 
 * * * * *
 
@@ -36,16 +39,16 @@ GAMEPLAY:
 
 Eyetest Demo
 ============
-![](https://github.com/AKGamerTech/ANWC-Website-Test/blob/main/img/resaturated_eyetest.gif)
+![](https://github.com/AKGamerTech/ANWC-Website-Old/blob/main/img/resaturated_eyetest.gif)
 
 Nightshift Demo
 ===============
-![Nightshift Demo Gif](https://github.com/AKGamerTech/ANWC-Website-Test/blob/main/img/resaturated_nightshift.gif)
+![Nightshift Demo Gif](https://github.com/AKGamerTech/ANWC-Website-Old/blob/main/img/resaturated_nightshift.gif)
 
 Runeracer Minigame Demo
 =======================
 
-![Runeracer Minigame Demo](https://github.com/AKGamerTech/ANWC-Website-Test/blob/main/img/resaturated_runeracer.gif)
+![Runeracer Minigame Demo](https://github.com/AKGamerTech/ANWC-Website-Old/blob/main/img/resaturated_runeracer.gif)
 
 * * * * *
 
